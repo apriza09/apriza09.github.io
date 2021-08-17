@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Hads</title>
+    <link href="//gitcdn.link/cdn/LoL-Human/LoLHuman/main/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="//gitcdn.link/cdn/LoL-Human/LoLHuman/main/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="//gitcdn.link/cdn/LoL-Human/LoLHuman/main/css/default.css" rel="stylesheet">
+    <link href="//gitcdn.link/cdn/LoL-Human/LoLHuman/main/css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top" class="dark-mode">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <i class="fa fa-smile-beam fa-2x"></i>
+                <div class="sidebar-brand-text mx-3">Hads</div>
+            </a>
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">
+                    <i class="fas fa-fw fa-thermometer-three-quarters"></i>
+                    <span>Statistic</span></a>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Features
+            </div>
+            <li class="nav-item">
+        <a class="nav-link" href="https://app.frm.rf.gd">
+          <i class="fa fa-fire"></i>
+          <span>Rest API</span>
+        </a>
+      </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Contact
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="https://t.me/LoLHumen">
+                    <i class="fab fa-fw fa-telegram-plane"></i>
+                    <span>Telegram</span>
+                </a>
+            </li>
+            <hr class="sidebar-divider">
+        </ul>
+        <!-- Sidebar -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <!-- TopBar -->
+                <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user-circle fa-2x"></i>
+                                <span class="ml-2 d-none d-lg-inline small font-weight-bold">Hads</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Topbar -->
+
+                <!-- Container Fluid-->
+                <div class="container-fluid" id="container-wrapper">
+                    <div class="row mb-3">
+<!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-50">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Visitor</div>
+                                            <div class="h5 mb-0 font-weight-bold" id="visits">100</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-eye fa-2x text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!-- Earnings (Annual) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-50">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">IP ADDRESS</div>
+                                            <div class="h5 mb-0 font-weight-bold" id="ipanda">0.0.0.0</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-user-ninja fa-2x text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- New User Card Example -->
+                       <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">WAKTU HARI INI</div>
+                      <script>
+                        today = new Date
+                        locale = 'id'
+                        hari = today.toLocaleDateString(locale, {
+                          weekday: 'long'
+                        })
+                        tahun = today.getFullYear()
+                        bulan = today.getMonth() + 1
+                        tanggal = today.getDate()
+                        time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                      </script>
+                      <div class="fa fa-clock small font-weight-bold" id="jam">00:00</div><br>
+                      <div class="fas fa-calendar small font-weight-bold">
+                        <script>
+                          document.write(` ${hari}, ${tanggal}-${bulan}-${tahun}`)
+                        </script>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-hourglass-half fa-2x text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                                <div class="card h-50 mb-4">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-md-left font-weight-bold mb-2 text-primary">My Website</div>
+                                    <div class="text-sm-left mb-0 font-weight-bold">Nyoba doang, kalo nemu bug lapor ke
+                                        <a href="https://t.me/apriza_09" target="_blank" style="color: #d3d5f3; text-decoration: none;">telegram.</a>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-quote-right fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!---Container Fluid-->
+            </div>
+            <!-- Footer -->
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        Made with <i class="fa fa-heart"></i> by
+                        <a href="https://t.me/apriza_09" target="_blank" style="color: rgb(225, 8, 253);"></a>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer -->
+        </div>
+    </div>
+  </div>
+<script>
+  window.setTimeout("writeiphtml()", 1000);
+
+      function writeiphtml() {
+        setTimeout("writeiphtml()", 1000);
+        document.getElementById("ipanda").innerText = ipanda
+      }
+      getip()
+
+      function getip() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", 'https://api.ipify.org/?format=json');
+        xhr.responseType = "json";
+        xhr.onload = function() {
+          ipanda = this.response.ip
+          console.log(this.response.ip)
+        };
+        xhr.send();
+      }
+      today = new Date
+                        locale = 'id'
+                        hari = today.toLocaleDateString(locale, {
+                          weekday: 'long'
+                        })
+                        tahun = today.getFullYear()
+                        bulan = today.getMonth() + 1
+                        tanggal = today.getDate()
+                        time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                        window.setTimeout("waktu()", 1000);
+
+      function waktu() {
+        var waktu = new Date();
+        setTimeout("waktu()", 1000);
+        let strings = `${waktu.getHours()}:${waktu.getMinutes()}:${waktu.getSeconds()}`
+        document.getElementById("jam").textContent = ' ' + strings
+      }
+      window.setTimeout("getvisit()", 1000);
+      function getvisit() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", `https://api.countapi.xyz/hit/${location.host}/visits`);
+        xhr.responseType = "json";
+        xhr.onload = function() {
+          document.getElementById('visits').innerText = this.response.value
+          document.getElementById('visitskecil').innerText = location.host + ' telah dikunjungi sebanyak ' + this.response.value + ' kali'
+        }
+        xhr.send();
+      }
+</script>
+    <!-- Scroll to top -->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <script src="//gitcdn.link/cdn/LoL-Human/LoLHuman/main/vendor/jquery/jquery.min.js"></script>
+    <script src="//gitcdn.link/cdn/LoL-Human/LoLHuman/main/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="//gitcdn.link/cdn/LoL-Human/LoLHuman/main/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="//gitcdn.link/cdn/LoL-Human/LoLHuman/main/js/ruang-admin.min.js"></script>
+</body>
+</html>
